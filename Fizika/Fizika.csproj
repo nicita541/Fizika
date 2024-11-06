@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="driver\CH340_64Bit_QA\CH341PT.DLL" />
+    <None Remove="driver\CH340_64Bit_QA\CH341S64.SYS" />
+    <None Remove="driver\CH340_64Bit_QA\CH341S98.SYS" />
+    <None Remove="driver\CH340_64Bit_QA\ch341SER.CAT" />
+    <None Remove="driver\CH340_64Bit_QA\CH341SER.INF" />
+    <None Remove="driver\CH340_64Bit_QA\CH341SER.SYS" />
+    <None Remove="driver\CH340_64Bit_QA\CH341SER.VXD" />
+    <None Remove="driver\CH340_64Bit_QA\DRVSETUP64.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="driver\CH340_64Bit_QA\CH341PT.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="driver\CH340_64Bit_QA\CH341S64.SYS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="driver\CH340_64Bit_QA\CH341S98.SYS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="driver\CH340_64Bit_QA\ch341SER.CAT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="driver\CH340_64Bit_QA\CH341SER.INF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="driver\CH340_64Bit_QA\CH341SER.SYS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="driver\CH340_64Bit_QA\CH341SER.VXD">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="driver\CH340_64Bit_QA\DRVSETUP64.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HIC.System.Windows.Forms.DataVisualization" Version="1.0.1" />
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
