@@ -213,6 +213,8 @@ namespace Fizika
         {
             flag = true;
             Form1.sr.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            // Отправка строки в COM-порт
+            Form1.sr.WriteLine("true");
         }
 
         int i = 0;
