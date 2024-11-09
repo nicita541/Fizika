@@ -7,40 +7,14 @@ namespace Fizika
 {
     public partial class Form1 : Form
     {
-        bool isConnected = false;
-        SerialPort sr = new SerialPort();
-        string selectedPort;
-
-        List<double> ports = new List<double>();
+        public bool isConnected = false;
+        public static SerialPort sr = new SerialPort();
+        public string selectedPort;
 
         public Form1()
         {
             InitializeComponent();
-            sr.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
-        }
-        bool conectText = false;
-        private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
-        {
-            try
-            {
-                string data = sr.ReadLine();
-                // Удаление символов новой строки и возврата каретки
-                data = data.Replace("\r", "").Replace("\n", "");
-                if (conectText)
-                {
-                    this.Invoke((MethodInvoker)delegate
-                    {
-                        
-                        //сдесь принимаю данные
-                        ports.Add(Convert.ToDouble(data));
-                    });
-                }
-                conectText = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ошибка при чтении данных: " + ex.Message);
-            }
+            
         }
 
         // Обработчик кнопки для поиска COM-портов
@@ -97,7 +71,7 @@ namespace Fizika
                 sr.Open();
                 isConnected = true;
                 button2.Text = "Disconnect";
-                MessageBox.Show("Подключено к " + selectedPort);
+                ShowChart();
             }
             catch (Exception ex)
             {
@@ -113,7 +87,6 @@ namespace Fizika
                 isConnected = false;
                 button2.Text = "Connect";
                 MessageBox.Show("Отключено от " + selectedPort);
-                ShowChart();
             }
             catch (Exception ex)
             {
@@ -123,7 +96,7 @@ namespace Fizika
         private void ShowChart()
         {
             // Создание и отображение нового окна с графиком
-            ChartForm chartForm = new ChartForm(ports);
+            ChartForm chartForm = new ChartForm();
             chartForm.Show();
         }
     }

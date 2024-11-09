@@ -53,3 +53,7 @@ D:\projectVsPython\Fizika\Fizika\obj\Release\net8.0-windows\refint\Fizika.dll
 D:\projectVsPython\Fizika\Fizika\obj\Release\net8.0-windows\Fizika.pdb
 D:\projectVsPython\Fizika\Fizika\obj\Release\net8.0-windows\Fizika.genruntimeconfig.cache
 D:\projectVsPython\Fizika\Fizika\obj\Release\net8.0-windows\ref\Fizika.dll
+D:\projectVsPython\Fizika\Fizika\obj\Release\net8.0-windows\Fizika.sourcelink.json
+D:\projectVsPython\Fizika\Fizika\obj\Release\net8.0-windows\Fizika.ChartForm.resources
+D:\projectVsPython\Fizika\Fizika\bin\Release\net8.0-windows\System.Runtime.WindowsRuntime.dll
+D:\projectVsPython\Fizika\Fizika\bin\Release\net8.0-windows\runtimes\win\lib\netcoreapp3.0\System.Runtime.WindowsRuntime.dll

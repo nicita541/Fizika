@@ -57,6 +57,14 @@
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "System.Runtime": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Runtime.WindowsRuntime": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
