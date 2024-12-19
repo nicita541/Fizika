@@ -198,11 +198,14 @@ namespace Fizika
             {
                 for (int i = 0; i < 9; i += 3)
                 {
-                    matimate(height, double.Parse(dataGridView1.Rows[i + 1].Cells[1].Value.ToString()),
-                        double.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()),
-                        double.Parse(dataGridView1.Rows[i + 1].Cells[2].Value.ToString()),
-                        double.Parse(dataGridView1.Rows[i + 2].Cells[2].Value.ToString()), i + 1);
+                    double value1 = double.TryParse(dataGridView1.Rows[i + 1].Cells[1].Value?.ToString(), out double parsedValue1) ? parsedValue1 : 0;
+                    double value2 = double.TryParse(dataGridView1.Rows[i].Cells[2].Value?.ToString(), out double parsedValue2) ? parsedValue2 : 0;
+                    double value3 = double.TryParse(dataGridView1.Rows[i + 1].Cells[2].Value?.ToString(), out double parsedValue3) ? parsedValue3 : 0;
+                    double value4 = double.TryParse(dataGridView1.Rows[i + 2].Cells[2].Value?.ToString(), out double parsedValue4) ? parsedValue4 : 0;
+
+                    matimate(height, value1, value2, value3, value4, i + 1);
                 }
+
             }
             catch { }
 
@@ -238,7 +241,7 @@ namespace Fizika
                 if (flag && data != null)
                 {
                     // Удаление символов новой строки и возврата каретки
-                    data = data.Replace("\r", "").Replace("\n", "");
+                    data = data.Replace("\r", "").Replace("\n", "").Replace("\0", "");
 
                     this.Invoke((MethodInvoker)delegate
                     {

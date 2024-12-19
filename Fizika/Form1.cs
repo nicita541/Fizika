@@ -14,7 +14,6 @@ namespace Fizika
         public Form1()
         {
             InitializeComponent();
-            
         }
 
         // Обработчик кнопки для поиска COM-портов
