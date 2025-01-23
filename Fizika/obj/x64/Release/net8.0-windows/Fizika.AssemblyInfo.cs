@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fizika")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c7b96607618eeedc7c534fb4ee18c50e7683ec4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26a03dd2b1d6590c5bafd75d79fefcc9291a9fca")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fizika")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fizika")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

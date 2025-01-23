@@ -215,41 +215,33 @@ namespace Fizika
         private void ButtonMeasure_Click(object sender, EventArgs e)
         {
             flag = true;
+            while (Form1.sr.BytesToRead > 0) Form1.sr.ReadExisting(); // Очистка данных в COM-порту
             Form1.sr.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
             // Отправка строки в COM-порт
             Form1.sr.WriteLine("true");
         }
 
-        int i = 0;
+        int nou = 0;
         bool flag = true;
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
         {
-            // Проверка, если данные больше не нужны
-            if (i >= 9)
-            {
-                if (Form1.sr.IsOpen)
-                {
-                    Form1.sr.Close();
-                    MessageBox.Show("Получение данных остановлено.");
-                }
-                return; // Прерываем выполнение обработчика
-            }
-
             try
             {
-                string data = Form1.sr.ReadLine();
-                if (flag && data != null)
+                if (flag)
                 {
-                    // Удаление символов новой строки и возврата каретки
-                    data = data.Replace("\r", "").Replace("\n", "").Replace("\0", "");
-
-                    this.Invoke((MethodInvoker)delegate
+                    string data = Form1.sr.ReadLine();
+                    data = data.Replace("\r", "").Replace("\n", "").Replace("\0", "").Replace(".", ",");
+                    double temp = Convert.ToDouble(data);
+                    if (temp >= 0.8 && flag)
                     {
-                        // Запись данных в ячейку таблицы
-                        dataGridView1.Rows[i].Cells[2].Value = Convert.ToDouble(data);
-                        i++;
-                        flag = false; // Останавливаем обработку, пока не будет снова установлено в true
-                    });
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            // Запись данных в ячейку таблицы
+                            dataGridView1.Rows[nou].Cells[2].Value = temp;
+                            flag = false; // Останавливаем обработку, пока не будет снова установлено в true
+                        });
+                        nou += 1; ;
+                    }
                 }
             }
             catch (Exception ex)
@@ -260,3 +252,4 @@ namespace Fizika
 
     }
 }
+
