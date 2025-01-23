@@ -10,7 +10,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nicit\\AppData\\Local\\Temp\\.vsdbgsrc\\dcb7313e2aa68b003eb05c877e03d1968ec7658284537e2df5ba38223a255df4\\SerialPort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8175D896-C718-4E81-8C21-B29DE144F3FF}|Fizika\\Fizika.csproj|d:\\projectvspython\\fizika\\fizika\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8175D896-C718-4E81-8C21-B29DE144F3FF}|Fizika\\Fizika.csproj|D:\\projectVsPython\\Fizika\\fizika\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8175D896-C718-4E81-8C21-B29DE144F3FF}|Fizika\\Fizika.csproj|solutionrelative:fizika\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -40,8 +40,7 @@
               "ToolTip": "D:\\projectVsPython\\Fizika\\Fizika\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "Fizika\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T19:53:15.011Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-01-23T19:53:15.011Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "ToolTip": "C:\\Users\\nicit\\AppData\\Local\\Temp\\.vsdbgsrc\\dcb7313e2aa68b003eb05c877e03d1968ec7658284537e2df5ba38223a255df4\\SerialPort.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
               "ViewState": "AQIAAIAEAAAAAAAAAAAYwI0EAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T19:43:42.295Z",
-              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+              "WhenOpened": "2025-01-23T19:43:42.295Z"
             },
             {
               "$type": "Document",
@@ -64,8 +62,7 @@
               "RelativeToolTip": "Fizika\\Form1.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAgwAoAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T18:23:25.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T18:23:25.893Z"
             },
             {
               "$type": "Document",
@@ -75,7 +72,7 @@
               "RelativeDocumentMoniker": "Fizika\\ChartForm.cs",
               "ToolTip": "D:\\projectVsPython\\Fizika\\Fizika\\ChartForm.cs",
               "RelativeToolTip": "Fizika\\ChartForm.cs",
-              "ViewState": "AQIAAOEAAAAAAAAAAAAuwNgAAAAYAAAA",
+              "ViewState": "AQIAAOEAAAAAAAAAAAA+wP4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T10:27:52.008Z",
               "EditorCaption": ""
